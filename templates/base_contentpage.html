@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block apptitle %} - {{ object.page_name }}{% endblock %}
+{% block keywords %}{{ object.keywords }}{% endblock %}
+{% block description %}{{ object.description }}{% endblock %}
+{% block content %}
+
+{% autoescape off %}    {{ object.content }} {% endautoescape %}
+
+{% endblock %}

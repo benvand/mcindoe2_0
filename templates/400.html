@@ -1,0 +1,12 @@
+{% extends "error_page.html" %}
+
+{% load staticfiles %}
+
+{% block error %}
+<div id="CenteredTitle">
+    <h3 class="center_text">
+        404 Error! No Page '{{ request.path }}'! Just kitty here!
+    </h3>
+    <img src="{% static "img/small_kitty.jpg" %}" class="center" style="width:50vw;height:auto;position:relative;" >
+
+{% endblock %}

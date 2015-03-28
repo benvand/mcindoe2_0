@@ -1,0 +1,13 @@
+{% extends "error_page.html" %}
+
+{% load staticfiles %}
+
+{% block error %}
+<div id="CenteredTitle">
+    <h3 class="center_text">
+        500 Error! Puppy did it!
+    </h3>
+    <img src="{% static "img/puppy.jpg" %}" class="center">
+</div>
+
+{% endblock %}
